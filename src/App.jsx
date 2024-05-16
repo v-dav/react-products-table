@@ -5,6 +5,7 @@ import ProductRow from "./components/products/ProductRow";
 import { useState } from "react";
 import Range from "./components/forms/Range";
 import { PRODUCTS as products } from "../db";
+import Footer from "./components/Footer";
 
 function SearchBar({ showStockedOnly, onStockedOnlyChange, search, onSearchChange, rangeValue, onRangeChange}) {
 	return (
@@ -82,7 +83,7 @@ function App() {
 				onRangeChange={setRangeValue}
 			/>
 			<ProductTable products={visibleProducts} />
-
+			<Footer />
 		</div>
 	)
 }
