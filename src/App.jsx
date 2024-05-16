@@ -60,13 +60,19 @@ function ProductTable({ products }) {
 function App() {
 	const [showStockedOnly, setShowStockedOnly] = useState(false)
 	const [search, setSearch] = useState('')
-	const [rangeValue, setRangeValue] = useState(0)
+	const [rangeValue, setRangeValue] = useState(10)
 
 	const visibleProducts = products.filter(product => {
+		let price = Number(product.price.split("$")[1])
+		let lowerCaseName = product.name.toLowerCase()
+
 		if (showStockedOnly && !product.stocked)
 			return false
 
-		if (search && !product.name.includes(search))
+		if (search && !lowerCaseName.includes(search.toLowerCase()))
+			return false
+
+		if (rangeValue < price)
 			return false
 
 		return true
