@@ -6,6 +6,7 @@ import { useState } from "react";
 import Range from "./components/forms/Range";
 import { PRODUCTS as products } from "../db";
 import Footer from "./components/Footer";
+import HeaderImage from './assets/react_table.png'
 
 function SearchBar({ showStockedOnly, onStockedOnlyChange, search, onSearchChange, rangeValue, onRangeChange}) {
 	return (
@@ -80,6 +81,7 @@ function App() {
 
 	return (
 		<div className="container my-3">
+			<img className="img-fluid mx-auto d-block" src={HeaderImage} alt=""/>
 			<SearchBar
 				showStockedOnly={showStockedOnly}
 				onStockedOnlyChange={setShowStockedOnly}
