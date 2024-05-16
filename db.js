@@ -1,0 +1,36 @@
+import { v4 as uuidv4 } from 'uuid';
+
+const randomPrice = () => Math.floor(Math.random() * 11) + 1;
+
+export const PRODUCTS = [
+  { "category": "Fruits", "price": `$${randomPrice()}`, "stocked": true, "name": "Apple", "id": uuidv4() },
+  { "category": "Fruits", "price": `$${randomPrice()}`, "stocked": true, "name": "Banana", "id": uuidv4() },
+  { "category": "Fruits", "price": `$${randomPrice()}`, "stocked": false, "name": "Orange", "id": uuidv4() },
+  { "category": "Fruits", "price": `$${randomPrice()}`, "stocked": true, "name": "Grapes", "id": uuidv4() },
+  { "category": "Fruits", "price": `$${randomPrice()}`, "stocked": true, "name": "Peach", "id": uuidv4() },
+  { "category": "Fruits", "price": `$${randomPrice()}`, "stocked": true, "name": "Pear", "id": uuidv4() },
+  { "category": "Fruits", "price": `$${randomPrice()}`, "stocked": true, "name": "Kiwi", "id": uuidv4() },
+  { "category": "Fruits", "price": `$${randomPrice()}`, "stocked": false, "name": "Pineapple", "id": uuidv4() },
+  { "category": "Fruits", "price": `$${randomPrice()}`, "stocked": true, "name": "Watermelon", "id": uuidv4() },
+  { "category": "Vegetables", "price": `$${randomPrice()}`, "stocked": false, "name": "Broccoli", "id": uuidv4() },
+  { "category": "Vegetables", "price": `$${randomPrice()}`, "stocked": true, "name": "Carrot", "id": uuidv4() },
+  { "category": "Vegetables", "price": `$${randomPrice()}`, "stocked": true, "name": "Spinach", "id": uuidv4() },
+  { "category": "Vegetables", "price": `$${randomPrice()}`, "stocked": false, "name": "Tomato", "id": uuidv4() },
+  { "category": "Vegetables", "price": `$${randomPrice()}`, "stocked": true, "name": "Potato", "id": uuidv4() },
+  { "category": "Vegetables", "price": `$${randomPrice()}`, "stocked": true, "name": "Lettuce", "id": uuidv4() },
+  { "category": "Vegetables", "price": `$${randomPrice()}`, "stocked": false, "name": "Onion", "id": uuidv4() },
+  { "category": "Vegetables", "price": `$${randomPrice()}`, "stocked": true, "name": "Bell Pepper", "id": uuidv4() },
+  { "category": "Vegetables", "price": `$${randomPrice()}`, "stocked": true, "name": "Zucchini", "id": uuidv4() },
+  { "category": "Vegetables", "price": `$${randomPrice()}`, "stocked": false, "name": "Celery", "id": uuidv4() },
+  { "category": "Dairy", "price": `$${randomPrice()}`, "stocked": true, "name": "Milk", "id": uuidv4() },
+  { "category": "Dairy", "price": `$${randomPrice()}`, "stocked": false, "name": "Cheese", "id": uuidv4() },
+  { "category": "Dairy", "price": `$${randomPrice()}`, "stocked": true, "name": "Yogurt", "id": uuidv4() },
+  { "category": "Dairy", "price": `$${randomPrice()}`, "stocked": true, "name": "Butter", "id": uuidv4() },
+  { "category": "Dairy", "price": `$${randomPrice()}`, "stocked": false, "name": "Cream", "id": uuidv4() },
+  { "category": "Dairy", "price": `$${randomPrice()}`, "stocked": true, "name": "Eggs", "id": uuidv4() },
+  { "category": "Meat", "price": `$${randomPrice()}`, "stocked": true, "name": "Chicken", "id": uuidv4() },
+  { "category": "Meat", "price": `$${randomPrice()}`, "stocked": true, "name": "Beef", "id": uuidv4() },
+  { "category": "Meat", "price": `$${randomPrice()}`, "stocked": false, "name": "Pork", "id": uuidv4() },
+  { "category": "Meat", "price": `$${randomPrice()}`, "stocked": true, "name": "Lamb", "id": uuidv4() },
+  { "category": "Meat", "price": `$${randomPrice()}`, "stocked": true, "name": "Turkey", "id": uuidv4() },
+]
